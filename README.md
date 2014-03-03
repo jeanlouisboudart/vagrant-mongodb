@@ -4,7 +4,7 @@ vagrant-mongodb
 Prerequisites :
  - Install Virtual box (tested on 4.2.22)
  - Install Vagrant (tested on 1.4.3)
- - Ensure vagrant directoru is in your path
+ - Ensure vagrant directory is in your path
 
 
 From the command line to
@@ -23,4 +23,4 @@ Drop the VM invoke :
 
 
 Particular notes :
-apt-cache directory is a empty directory versionned on svn. We should never commit anything inside it. It just acts as debian package cache for your local machine (that survive to vagrant destroy).
+apt-cache directory is a empty directory versionned. We should never commit anything inside it. It just acts as debian package cache for your local machine (that survive to vagrant destroy).
