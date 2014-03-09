@@ -7,12 +7,14 @@ class {'::mongodb::globals':
 class {'::mongodb::server': 
 	verbose => true,
 	auth => true,
+	bind_ip => ['0.0.0.0'],
 	require       => Class['mongodb::globals'],
 }
   
 mongodb::db { 'myproject':
 	user          => 'myuser',
 	password => 'mypassword',
+	roles => ['dbAdmin'],
 	require       => Class['mongodb::server'],
 }
 
